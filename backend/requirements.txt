@@ -1,0 +1,27 @@
+# --- Core backend ---
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+aiofiles==23.2.1
+python-multipart==0.0.6
+python-dotenv==1.0.0
+pydantic==1.10.12
+
+# --- ML + Embeddings ---
+numpy==1.24.3
+tqdm==4.66.1
+sentence-transformers==2.2.2
+huggingface-hub==0.13.4
+langchain==0.0.350
+
+# --- Database ---
+chromadb==0.4.22  # Pinned for stability (newer versions may have issues)
+pysqlite3-binary # Required for ChromaDB on some systems
+
+# --- File download ---
+gdown==5.2.0
+requests==2.31.0
+
+
+# --- Utilities ---
+pypdf==3.17.4  # For PDF processing if needed
+unstructured==0.12.2  # For document parsing

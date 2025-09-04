@@ -1,0 +1,108 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ==================== DEPENDENCIES ====================
+.npm/
+.pnpm/
+.yarn/
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# ==================== PRODUCTION ====================
+backend/chroma_db/
+chroma_db/
+*.sqlite3
+*.db
+*.sqlite
+*.sqlite3-*
+
+# ==================== DEBUG & LOGS ====================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+logs/
+
+# ==================== ENVIRONMENT FILES ====================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ==================== IDE & EDITOR ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==================== OS FILES ====================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==================== PYTHON ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==================== VERCEL ====================
+.vercel
+
+# ==================== TYPESCRIPT ====================
+*.tsbuildinfo
+
+# ==================== DOCKER ====================
+.dockerignore
+
+# ==================== LARGE DATA FILES ====================
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+
+# ==================== TEMPORARY FILES ====================
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ==================== GIT LFS TRACKED FILES ====================
+# These patterns are already tracked by Git LFS in your .gitattributes
+# but we still want to ignore them in regular git to avoid duplication
+
+# ==================== EXCEPTIONS FOR GIT LFS ====================
+# Allow Git LFS to track these specific files despite being in ignored directories
+!**/*.bin
+!**/*.pt
+!**/*.pth
+!**/*.safetensors
+!**/*.pkl
+!**/*.pickle
+!**/*.npy
+!**/*.npz
+!**/*.h5
+!**/*.onnx
+!**/*.tflite
+!**/*.parquet
